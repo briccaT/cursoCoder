@@ -5,60 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tazas</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <!-- link css -->
-        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Nuestras tazas</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Volver a inicio</a></li>
-            </ul>
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg colorNav">
+            <div class="container-fluid">
+            <a class="navbar-brand logo" href="../index.html"><img class="navbar-logo" src="../img/Mi proyecto.png" alt="LOGO"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/tazas.html">Tazas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/sahumerios.html">Sahumerios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/vasos.html">Vasos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
     <main>
-        <h2>Selección de tazas</h2>
-		<p>En nuestra tienda encontrarás una gran variedad de tazas de diferentes estilos y diseños!</p>
-		
-		<h3>Tazas de porcelana</h3>
-		<ul>
-			<li>Taza blanca con diseño floral - $1800</li>
-			<li>Taza con estampado de animales - $1250</li>
-			<li>Taza con diseño de pájaros - $870</li>
-		</ul>
-		
-		<h3>Tazas de cerámica</h3>
-		<ul>
-			<li>Taza de colores con asa de madera - $1500</li>
-			<li>Taza con diseño geométrico - $1290</li>
-			<li>Taza con estampado de flores - $1500</li>
-		</ul>
-		
-		<h3>Tazas de vidrio</h3>
-		<ul>
-			<li>Taza con tapa y pajita - $500</li>
-			<li>Taza con diseño de corazón - $1000</li>
-			<li>Taza con diseño de cactus - $1270</li>
-		</ul>
-		
-		<h2>Forma de pago y envío</h2>
-		<p>Aceptamos pagos con tarjeta de crédito, débito y transferencia. Realizamos envíos a toda la ciudad y el costo varía según la zona.</p>
-		
-		<h2>Contacto</h2>
-		<p>Si tienes alguna pregunta o querés hacer un pedido, contáctanos a través de nuestro correo electrónico shimai@gmail.com o llámanos al 3516412434.</p>
-    </main>
-    <footer>
+        <h2 class="text-center">Selección de tazas</h2>
+        <p class="text-center">En nuestra tienda encontrarás una gran variedad de tazas de diferentes estilos y diseños.</p>
+        
+        <h3 class="text-center">Tazas de porcelana</h3>
+        <div class="image-container">
+            <ul>
+                <li>
+                    <img src="../img/Tazas.png" class="img-fluid" alt="taza">
+                    <p>Taza blanca con diseño - $1800</p>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </li>
+                <li>
+                    <img src="../img/tazas2.png" class="img-fluid" alt="taza">
+                    <p>Taza con estampado de animales - $1250</p>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </li>
+                <li>
+                    <img src="../img/tazas3.png" class="img-fluid" alt="taza">
+                    <p>Taza con diseño de Mickey - $870</p>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </li>
+            </ul>
+        </div>
+        
+        <h2 class="text-center">Forma de pago y envío</h2>
+        <p class="text-center">Aceptamos pagos con tarjeta de crédito, débito y transferencia. Realizamos envíos a toda la ciudad y el costo varía según la zona.</p>
+        
+        <h2 class="text-center">Contacto</h2>
+        <p class="text-center">Si tienes alguna pregunta o quieres hacer un pedido, contáctanos a través de nuestro correo electrónico shimai@gmail.com o llámanos al 3516317872.</p>
+    </main>    
         <footer class="footer">
             <div class="footer-info">
                 <p>SHIMAI OBJETOS</p>
-                <p>Dirección: Av. Velez Sarsfield 1234</p>
-                <p>Teléfono: 3516123123</p>
+                <p>Dirección: Av. Velez Sarsfield 3537</p>
+                <p>Teléfono: 3516317872</p>
             </div>
             <div class="map-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.6697255583285!2d-64.20486374733233!3d-31.45075823169946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a256dbfd508f%3A0xe8642244749c677b!2sShimai!5e0!3m2!1ses!2sar!4v1682977933968!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-        </footer> 
-    </footer>
+        </footer>
+            <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
