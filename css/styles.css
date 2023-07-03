@@ -124,6 +124,7 @@
   cursor: pointer;
   margin-bottom: 5px;
 }
+
 @media (max-width: 768px) {
   .image-container .product-list .product-item {
     flex: 0 0 100%;
@@ -151,5 +152,18 @@
 .image-wrapper {
   margin-right: 25px;
 }
+
+.form-with-border {
+  max-width: 400px; 
+  margin: 0 auto;
+  border: 2px solid #EDBFD2; 
+  padding: 20px; 
+}
+
+.col {
+  height: 100px;
+  width: 100px;
+}
+
 
 /*# sourceMappingURL=styles.css.map */
